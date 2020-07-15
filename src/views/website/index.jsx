@@ -1,5 +1,12 @@
 import React from 'react';
-import { WebsiteStyles, WhiteWrapper, BigIcon, TeamItem } from './styles';
+import { GlobalVars } from '~/styles/global';
+import {
+  WebsiteStyles,
+  WhiteWrapper,
+  BigIcon,
+  TeamItem,
+  FaleConosco,
+} from './styles';
 
 import NavBar from './components/NavBar';
 import Banner from './components/Banner';
@@ -97,6 +104,14 @@ export default function Home() {
               photo="https://scontent.fipn6-1.fna.fbcdn.net/v/t1.0-1/p200x200/69461404_2596098667108981_2852688798075060224_n.jpg?_nc_cat=109&_nc_sid=7206a8&_nc_ohc=HB8ibFJF-W0AX8Rcmzo&_nc_ht=scontent.fipn6-1.fna&_nc_tp=6&oh=fa40b4c69eae0ab83f3511e26035e017&oe=5F343F13"
               p="Fulll Stack Developer."
             />
+            <FaleConosco>
+              <img
+                className="mr-3"
+                src={GlobalVars.icon.whatsapp}
+                alt="Fale Conosco!"
+              />
+              Fale Conosco!
+            </FaleConosco>
           </div>
         </div>
       </section>

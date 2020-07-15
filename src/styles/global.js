@@ -25,6 +25,8 @@ export const GlobalVars = {
 
     dark: '#202124',
     light: '#f1f1f1',
+
+    darker: '#00000077',
     veryLight: '#ffffff66',
 
     // CLiente

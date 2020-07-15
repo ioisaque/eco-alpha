@@ -8,6 +8,20 @@ export const WhiteWrapper = styled.div`
   background-color: ${GlobalVars.color.light};
 `;
 
+export const FaleConosco = styled.button`
+  display: block;
+  margin: 5rem auto 0;
+
+  font-size: 2rem;
+  font-weight: 500;
+  padding: 15px 50px;
+  color: ${GlobalVars.color.white};
+
+  border: 2px solid ${GlobalVars.color.white};
+  border-radius: 1rem;
+  background: ${GlobalVars.color.e_green};
+`;
+
 export const BigIcon = styled.div`
   width: 100%;
   height: 350px;

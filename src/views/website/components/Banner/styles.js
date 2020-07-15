@@ -2,16 +2,10 @@ import styled from 'styled-components';
 
 import { GlobalVars } from '~/styles/global';
 
-export const Container = styled.div`
+export const BackgroundImage = styled.div`
   width: 100%;
   height: 800px;
   overflow: hidden;
-
-  display: flex;
-  align-items: center;
-  justify-content: center;
-
-  color: ${GlobalVars.color.white};
 
   background: url(${GlobalVars.banner.one});
   background-size: 100%;
@@ -20,12 +14,24 @@ export const Container = styled.div`
   background-position-y: center;
 `;
 
-export const Title = styled.h1`
+export const Container = styled.div`
+  width: 100%;
+  height: 100%;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  color: ${GlobalVars.color.white};
+
+  background: ${GlobalVars.color.darker};
+`;
+
+export const Logo = styled.img.attrs({
+  src: GlobalVars.img.ecoalpha,
+})`
   display: block;
-  padding: 100px;
-  font-size: 10rem;
-  font-weight: 700;
-  text-align: center;
+  padding: 30px 100px;
 `;
 
 export const SubTitle = styled.p`
@@ -45,7 +51,7 @@ export const Button = styled.button`
   padding: 15px 50px;
   color: ${GlobalVars.color.white};
 
-  border: none;
+  background: none;
   border-radius: 1rem;
-  background: ${GlobalVars.color.e_green};
+  border: 2px solid ${GlobalVars.color.white};
 `;
