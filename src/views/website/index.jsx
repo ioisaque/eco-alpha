@@ -32,13 +32,13 @@ export default function Home() {
               </p>
             </div>
             <div className="col-md-6 col-sm-12 p-5">
-              <BigIcon rocket />
+              <BigIcon photo={GlobalVars.icon.rocket} />
             </div>
           </div>
           {/* VISÃO */}
           <div className="row">
             <div className="col-md-6 col-sm-12 p-5">
-              <BigIcon rocket />
+              <BigIcon photo={GlobalVars.icon.eye} />
             </div>
             <div className="col-md-6 col-sm-12 p-5">
               <h2>Visão</h2>
@@ -63,7 +63,7 @@ export default function Home() {
               </p>
             </div>
             <div className="col-md-6 col-sm-12 p-5">
-              <BigIcon rocket />
+              <BigIcon photo={GlobalVars.icon.checklist} />
             </div>
           </div>
         </div>

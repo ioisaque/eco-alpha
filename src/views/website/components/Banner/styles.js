@@ -30,13 +30,15 @@ export const Container = styled.div`
 export const Logo = styled.img.attrs({
   src: GlobalVars.img.ecoalpha,
 })`
+  max-width: 400px;
   display: block;
-  padding: 30px 100px;
+  padding: 30px;
+  margin: 30px auto;
 `;
 
 export const SubTitle = styled.p`
   display: block;
-  font-size: 2rem;
+  font-size: 1.5rem;
   font-weight: 500;
   text-align: center;
   margin-bottom: 5rem;

@@ -36,7 +36,7 @@ export const GlobalVars = {
   },
 
   img: {
-    ecoalpha: require('~/assets/img/logo_sm.png'),
+    ecoalpha: require('~/assets/img/logo.png'),
 
     logo: require('~/assets/svg/logo_ideyou.svg'),
     cube_bg: require('~/assets/svg/cube_bg.svg'),
@@ -47,6 +47,9 @@ export const GlobalVars = {
   },
 
   icon: {
+    rocket: require('~/assets/icon/rocket.svg'),
+    eye: require('~/assets/icon/eye.svg'),
+    checklist: require('~/assets/icon/checklist.svg'),
     whatsapp: require('~/assets/icon/whatsapp.svg'),
   },
 

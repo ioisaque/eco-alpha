@@ -22,12 +22,24 @@ export const FaleConosco = styled.button`
   background: ${GlobalVars.color.e_green};
 `;
 
-export const BigIcon = styled.div`
+export const BigIconWrapper = styled.div`
   width: 100%;
   height: 350px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
   border-radius: 0.7rem;
   background-color: ${GlobalVars.color.e_green};
 `;
+
+export function BigIcon({ photo }) {
+  return (
+    <BigIconWrapper>
+      <img width="35%" src={photo} alt="Big Icon" />
+    </BigIconWrapper>
+  );
+}
 
 export const PhotoWrapper = styled.div`
   width: 100%;
@@ -38,7 +50,7 @@ export function TeamItem({ photo, name, p }) {
   return (
     <div className="col-md-4 col-sm-12 p-3">
       <PhotoWrapper>
-        <img width="100%" className="p-3" src={photo} />
+        <img width="100%" className="p-3" src={photo} alt={name} />
       </PhotoWrapper>
       <h2>{name}</h2>
       <p>{p}</p>

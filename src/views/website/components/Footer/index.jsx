@@ -5,8 +5,13 @@ import { Container, Item } from './styles';
 export default function SocialBar() {
   return (
     <Container>
-      <a href="https://isaquecosta.com.br"><img src="https://cdn.isaquecosta.com.br/marketing/copyright_dark.png"/></a>
-      <img src={GlobalVars.img.ecoalpha}/>
+      <a href="https://isaquecosta.com.br">
+        <img
+          src="https://cdn.isaquecosta.com.br/marketing/copyright_dark.png"
+          alt="Desenvolvido por Isaque Costa"
+        />
+      </a>
+      <img width="10%" alt="Eco Alpha" src={GlobalVars.img.ecoalpha} />
       <div>
         <Item
           link="https://www.instagram.com/"

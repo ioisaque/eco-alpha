@@ -8,7 +8,7 @@ export default function Banner() {
       <Container>
         <div>
           <Logo />
-          <SubTitle>SLOGAN</SubTitle>
+          <SubTitle>O melhor do mercado!</SubTitle>
           <Button>
             <img
               className="mr-3"
