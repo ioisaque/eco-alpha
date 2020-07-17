@@ -2,10 +2,17 @@ import React from 'react';
 import styled, { createGlobalStyle } from 'styled-components';
 import { GlobalVars } from '~/styles/global';
 
-export const WhiteWrapper = styled.div`
-  padding-top: 120px;
+export const Wrapper = styled.div`
+  height: 100%;
   margin: 0 !important;
-  background-color: ${GlobalVars.color.light};
+  background-color: ${GlobalVars.color.white};
+`;
+
+export const Container = styled.div`
+  min-height: 100%;
+  padding: 120px 0;
+  margin: 0 0 -120px 0;
+  background-color: ${GlobalVars.color.lightGrey};
 `;
 
 export const FaleConosco = styled.button`
@@ -58,11 +65,43 @@ export function TeamItem({ photo, name, p }) {
   );
 }
 
+export const BulletContainer = styled.div`
+  margin: 1rem 0;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+`;
+
+export function BulletItem({ icon, text }) {
+  return (
+    <BulletContainer>
+      <i className="mIcon mr-2">{icon}</i> {text}
+    </BulletContainer>
+  );
+}
+
 export const WebsiteStyles = createGlobalStyle`
-  /* SOBRE NOS */
-  .about-us {
+  @import url("https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css");
+
+  * {
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    box-sizing: border-box;
+  }
+
+  html, body {
+    width: 100%;
+    height: 100%;
+    -webkit-font-smoothing: antialiased;
+    background: ${GlobalVars.color.white};
+  }
+
+  section {
     padding: 100px 0;
   }
+
+  /* SOBRE NOS */
   .about-us h1 {
     font-weight: 700;
     text-align: center;
@@ -82,26 +121,28 @@ export const WebsiteStyles = createGlobalStyle`
 
   /* TIME */
   .team {
-    padding: 100px 0;
+    color: ${GlobalVars.color.white};
     background-color: ${GlobalVars.color.e_green};
+  }
+  .team.single {
+    padding: 100px 0;
+    color: ${GlobalVars.color.black};
+    background-color: ${GlobalVars.color.lightGrey};
   }
   .team h1 {
     font-weight: 700;
     text-align: center;
     margin-bottom: 100px;
-    color: ${GlobalVars.color.white};
   }
   .team h2 {
     padding: 1rem;
     font-weight: 300;
     text-align: center;
     margin-bottom: 35px;
-    color: ${GlobalVars.color.white};
   }
   .team p {
     font-size: 1.2rem;
     text-align: center;
-    color: ${GlobalVars.color.white};
   }
 
   /* NAVBAR  */
@@ -113,5 +154,32 @@ export const WebsiteStyles = createGlobalStyle`
   .nav-item.active .nav-link{
     text-decoration: underline;
     text-underline-position: under;
+  }
+  .navbar-toggler {
+    color: ${GlobalVars.color.white}
+  }
+
+  /* GALERIA  */
+  .gallery{
+    padding: 50px 0;
+  }
+
+  /* FAQ  */
+  .faq span {
+    width: 100%;
+    display: block;
+    cursor: pointer;
+    padding: 1rem 2rem;
+    margin-top: 1rem;
+    color: ${GlobalVars.color.white};
+    background: ${GlobalVars.color.neutral};
+  }
+  .faq .card {
+    margin: 0;
+  }
+
+  /* CONTATO  */
+  .form-control {
+    margin: 1rem 0;
   }
 `;

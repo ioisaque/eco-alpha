@@ -1,4 +1,5 @@
 // import 'bootstrap/dist/css/bootstrap.min.css';
+import React from 'react';
 import styled, { createGlobalStyle } from 'styled-components';
 
 export const GlobalVars = {
@@ -59,14 +60,6 @@ export const GlobalVars = {
     three: require('~/assets/img/banner1.jpg'),
   },
 };
-
-export const LoginForm = styled.div`
-  max-width: 350px;
-  margin: 0 auto;
-  padding: 0 20px 50px;
-  height: auto !important;
-  background-color: ${GlobalVars.color.dark};
-`;
 
 export const GlobalStyles = createGlobalStyle`
   @import url("https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700");
@@ -185,3 +178,19 @@ export const GlobalStyles = createGlobalStyle`
     border-radius: 0;
   }
 `;
+
+export const LoginForm = styled.div`
+  max-width: 350px;
+  margin: 0 auto;
+  padding: 0 20px 50px;
+  height: auto !important;
+  background-color: ${GlobalVars.color.dark};
+`;
+
+export function ImageFluid({ width, height, src, ...rest }) {
+  return (
+    <div style={{ width, height, overflow: 'hidden' }}>
+      <img src={src} alt="Eco Alpha" {...rest} />
+    </div>
+  );
+}

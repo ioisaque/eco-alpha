@@ -1,5 +1,6 @@
 import React from 'react';
-import styled from 'styled-components';
+import { Link } from 'react-router-dom';
+import styled, { createGlobalStyle } from 'styled-components';
 
 import { GlobalVars } from '~/styles/global';
 
@@ -28,16 +29,24 @@ export function NavItem({ title, active, link }) {
   if (active)
     return (
       <li className="nav-item active">
-        <a className="nav-link" href={link}>
+        <Link className="nav-link" to={link}>
           {title} <span className="sr-only">(current)</span>
-        </a>
+        </Link>
       </li>
     );
   return (
     <li className="nav-item">
-      <a className="nav-link" href={link}>
+      <Link className="nav-link" to={link}>
         {title}
-      </a>
+      </Link>
     </li>
   );
 }
+
+export const FancyStyles = createGlobalStyle`
+	.navbar-collapse.show {
+		padding: 1rem;
+		transition-duration: .2s;
+		background: ${GlobalVars.color.e_green};
+	}
+`;

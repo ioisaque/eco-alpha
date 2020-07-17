@@ -1,11 +1,12 @@
 import React from 'react';
 import SocialBar from '../SocialBar';
-import { Wrapper, Container, NavItem } from './styles';
+import { Wrapper, Container, NavItem, FancyStyles } from './styles';
 
 export default function NavBar({ page }) {
   return (
     <Wrapper>
       <SocialBar />
+      <FancyStyles />
       <Container>
         <nav className="navbar navbar-expand-md">
           <button
@@ -20,7 +21,7 @@ export default function NavBar({ page }) {
             <i className="mIcon navbar-toggler-icon">menu</i>
           </button>
           <div className="collapse navbar-collapse" id="navbarCollapse">
-            <ul className="navbar-nav mr-auto">
+            <ul className="navbar-nav">
               <NavItem title="Início" link="/" active={page === 'home'} />
               <NavItem
                 title="Oportunidades"

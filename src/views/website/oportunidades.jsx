@@ -1,64 +1,35 @@
 import React from 'react';
-import { WebsiteStyles, WhiteWrapper, BigIcon } from './styles';
+import { ImageFluid } from '~/styles/global';
+import { WebsiteStyles, Wrapper, Container } from './styles';
 
 import NavBar from './components/NavBar';
 import Footer from './components/Footer';
 
 export default function Oportunidades() {
   return (
-    <WhiteWrapper>
+    <Wrapper>
       <WebsiteStyles />
       <NavBar page="oportunidades" />
-
-      <section className="about-us">
-        <div className="container">
-          {/* MISSÃO */}
-          <div className="row">
-            <div className="col-md-6 col-sm-12 p-5">
-              <h2>Missão</h2>
-              <p>
-                Oferecer aos associados maior rentabilidade e novas
-                oportunidades de negócio.
-              </p>
-            </div>
-            <div className="col-md-6 col-sm-12 p-5">
-              <BigIcon rocket />
-            </div>
-          </div>
-          {/* VISÃO */}
-          <div className="row">
-            <div className="col-md-6 col-sm-12 p-5">
-              <BigIcon rocket />
-            </div>
-            <div className="col-md-6 col-sm-12 p-5">
-              <h2>Visão</h2>
-              <p>
-                Ser líder do mercado e referência no segmento da construção
-                civil.
-              </p>
+      <Container>
+        <section className="team single">
+          <div className="container">
+            {/* MISSÃO */}
+            <div className="row">
+              <div className="col-md-6 col-sm-12 p-5">
+                <h2>Isaque Costa</h2>
+                <p>
+                  Oferecer aos associados maior rentabilidade e novas
+                  oportunidades de negócio.
+                </p>
+              </div>
+              <div className="col-md-6 col-sm-12 p-5">
+                <ImageFluid src="https://scontent.fipn6-1.fna.fbcdn.net/v/t1.0-1/p200x200/69461404_2596098667108981_2852688798075060224_n.jpg?_nc_cat=109&_nc_sid=7206a8&_nc_ohc=HB8ibFJF-W0AX8Rcmzo&_nc_ht=scontent.fipn6-1.fna&_nc_tp=6&oh=fa40b4c69eae0ab83f3511e26035e017&oe=5F343F13" />
+              </div>
             </div>
           </div>
-          {/* VALORES */}
-          <div className="row">
-            <div className="col-md-6 col-sm-12 p-5">
-              <h2>Valores</h2>
-              <p>
-                Meritocracia;
-                <br />
-                Responsabilidade;
-                <br />
-                Honestidade;
-                <br />
-                Paixão;
-              </p>
-            </div>
-            <div className="col-md-6 col-sm-12 p-5">
-              <BigIcon rocket />
-            </div>
-          </div>
-        </div>
-      </section>
+        </section>
+      </Container>
       <Footer />
-    </WhiteWrapper>
+    </Wrapper>
   );
 }

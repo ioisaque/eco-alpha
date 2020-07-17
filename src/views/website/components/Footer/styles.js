@@ -5,7 +5,7 @@ import { GlobalVars } from '~/styles/global';
 
 export const Container = styled.div`
   width: 100%;
-
+  height: 120px;
   padding: 50px 0;
 
   display: flex;
@@ -19,7 +19,6 @@ const Icon = styled.img`
   height: 60px;
   padding: 15px 10px;
 `;
-
 
 export function Item({ icon, link }) {
   return (

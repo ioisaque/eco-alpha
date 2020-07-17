@@ -8,8 +8,8 @@ export const BackgroundImage = styled.div`
   overflow: hidden;
 
   background: url(${GlobalVars.banner.one});
-  background-size: 100%;
-  background-repeat: none;
+  background-size: cover;
+  background-repeat: no-repeat;
   background-position-x: center;
   background-position-y: center;
 `;

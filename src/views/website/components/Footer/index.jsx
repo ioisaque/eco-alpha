@@ -11,7 +11,11 @@ export default function SocialBar() {
           alt="Desenvolvido por Isaque Costa"
         />
       </a>
-      <img width="10%" alt="Eco Alpha" src={GlobalVars.img.ecoalpha} />
+      <img
+        style={{ width: 'auto', maxHeight: '70px' }}
+        alt="Eco Alpha"
+        src={GlobalVars.img.ecoalpha}
+      />
       <div>
         <Item
           link="https://www.instagram.com/"
