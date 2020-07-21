@@ -1,10 +1,10 @@
 import React from 'react';
 import { Button } from 'reactstrap';
 import { Form, Input, Textarea } from '@rocketseat/unform';
-import { WebsiteStyles, Wrapper, Container, BulletItem } from './styles';
+import { Wrapper, Container, BulletItem } from '~/styles/global';
 
-import NavBar from './components/NavBar';
-import Footer from './components/Footer';
+import NavBar from '~/components/NavBar';
+import Footer from '~/components/Footer';
 
 export default function Contato() {
   const handleSubmit = (data) => {
@@ -12,10 +12,9 @@ export default function Contato() {
   };
 
   return (
-    <Wrapper>
-      <WebsiteStyles />
+    <Wrapper id="wrapper">
       <NavBar page="contato" />
-      <Container>
+      <Container id="container">
         <section className="contact">
           <div className="container">
             {/* MISSÃO */}

@@ -1,25 +1,25 @@
 import 'bootstrap';
 import '~/styles/main.scss';
-import '~/config/ReactotronConfig';
 
 import React from 'react';
-import { Provider } from 'react-redux';
-import { BrowserRouter as Router } from 'react-router-dom';
-import { PersistGate } from 'redux-persist/integration/react';
-import { ToastContainer } from 'react-toastify';
+import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
+import { GlobalStyles } from '~/styles/global';
 
-import Routes from '~/routes';
-import { store, persistor } from '~/store';
+import Home from '~/pages/index';
+import Galeria from '~/pages/galeria';
+import FAQ from '~/pages/faq';
+import Contato from '~/pages/contato';
 
 export default function App() {
   return (
-    <Provider store={store}>
-      <PersistGate persistor={persistor}>
-        <ToastContainer autoClose={5000} />
-        <Router>
-          <Routes />
-        </Router>
-      </PersistGate>
-    </Provider>
+    <Router>
+      <GlobalStyles />
+      <Switch>
+        <Route path="/" exact component={Home} />
+        <Route path="/galeria" component={Galeria} />
+        <Route path="/faq" component={FAQ} />
+        <Route path="/contato" component={Contato} />
+      </Switch>
+    </Router>
   );
 }

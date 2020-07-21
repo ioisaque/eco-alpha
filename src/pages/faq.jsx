@@ -1,16 +1,15 @@
 import React from 'react';
 import { Card, CardBody, UncontrolledCollapse } from 'reactstrap';
-import { WebsiteStyles, Wrapper, Container } from './styles';
+import { Wrapper, Container } from '~/styles/global';
 
-import NavBar from './components/NavBar';
-import Footer from './components/Footer';
+import NavBar from '~/components/NavBar';
+import Footer from '~/components/Footer';
 
 export default function Faq() {
   return (
-    <Wrapper>
-      <WebsiteStyles />
+    <Wrapper id="wrapper">
       <NavBar page="faq" />
-      <Container>
+      <Container id="container">
         <section className="faq">
           <div className="container">
             <span id="question1">

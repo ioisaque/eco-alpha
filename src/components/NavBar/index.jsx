@@ -24,11 +24,6 @@ export default function NavBar({ page }) {
             <ul className="navbar-nav">
               <NavItem title="Início" link="/" active={page === 'home'} />
               <NavItem
-                title="Oportunidades"
-                link="/oportunidades"
-                active={page === 'oportunidades'}
-              />
-              <NavItem
                 title="Galeria"
                 link="/galeria"
                 active={page === 'galeria'}

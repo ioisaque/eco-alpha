@@ -1,24 +1,22 @@
 import React from 'react';
-import { GlobalVars } from '~/styles/global';
 import {
-  WebsiteStyles,
+  GlobalVars,
   Wrapper,
   Container,
   BigIcon,
   TeamItem,
   FaleConosco,
-} from './styles';
+} from '~/styles/global';
 
-import NavBar from './components/NavBar';
-import Banner from './components/Banner';
-import Footer from './components/Footer';
+import NavBar from '~/components/NavBar';
+import Banner from '~/components/Banner';
+import Footer from '~/components/Footer';
 
 export default function Home() {
   return (
-    <Wrapper>
-      <WebsiteStyles />
+    <Wrapper id="wrapper">
       <NavBar page="home" />
-      <Container>
+      <Container id="container">
         <Banner />
         <section className="about-us">
           <h1>Sobre Nós</h1>
