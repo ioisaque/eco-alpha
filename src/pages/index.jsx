@@ -6,15 +6,26 @@ import {
   BigIcon,
   TeamItem,
   FaleConosco,
-} from '~/styles/global';
+  GlobalStyles,
+} from '~/styles';
 
 import NavBar from '~/components/NavBar';
 import Banner from '~/components/Banner';
 import Footer from '~/components/Footer';
 
+const Fotos = {
+  telhado: require('~/assets/img/telhado.jpg'),
+  calhas: require('~/assets/img/calhas.jpg'),
+  pintura: require('~/assets/img/pintura.jpg'),
+  encanamento: require('~/assets/img/encanamento.jpg'),
+  alvenaria: require('~/assets/img/alvenaria.jpg'),
+  eletrica: require('~/assets/img/eletrica.jpg'),
+};
+
 export default function Home() {
   return (
     <Wrapper id="wrapper">
+      <GlobalStyles />
       <NavBar page="home" />
       <Container id="container">
         <Banner />
@@ -69,46 +80,42 @@ export default function Home() {
         </section>
 
         <section className="team">
-          <h1>Quer fazer parte do nosso time?</h1>
+          <h1>Nossos Serviços</h1>
           <div className="container">
             {/* MISSÃO */}
             <div className="row">
               <TeamItem
-                name="Isaque Costa"
-                photo="https://scontent.fipn6-1.fna.fbcdn.net/v/t1.0-1/p200x200/69461404_2596098667108981_2852688798075060224_n.jpg?_nc_cat=109&_nc_sid=7206a8&_nc_ohc=HB8ibFJF-W0AX8Rcmzo&_nc_ht=scontent.fipn6-1.fna&_nc_tp=6&oh=fa40b4c69eae0ab83f3511e26035e017&oe=5F343F13"
-                p="Fulll Stack Developer."
+                name="Telhado"
+                photo={Fotos.telhado}
+                // p="Carpinteiro."
               />
               <TeamItem
-                name="Isaque Costa"
-                photo="https://scontent.fipn6-1.fna.fbcdn.net/v/t1.0-9/83856551_103181677928350_4498881541371330560_o.jpg?_nc_cat=111&_nc_sid=09cbfe&_nc_ohc=AG1aA5AriYgAX-8kOph&_nc_ht=scontent.fipn6-1.fna&oh=9bcce4cc5fbb6a911f1132e8ad076991&oe=5F3441C0"
-                p="Fulll Stack Developer."
+                name="Calhas"
+                photo={Fotos.calhas}
+                // p="Eletricista."
               />
               <TeamItem
-                name="Isaque Costa"
-                photo="https://scontent.fipn6-1.fna.fbcdn.net/v/t1.0-1/p200x200/69461404_2596098667108981_2852688798075060224_n.jpg?_nc_cat=109&_nc_sid=7206a8&_nc_ohc=HB8ibFJF-W0AX8Rcmzo&_nc_ht=scontent.fipn6-1.fna&_nc_tp=6&oh=fa40b4c69eae0ab83f3511e26035e017&oe=5F343F13"
-                p="Fulll Stack Developer."
+                name="Pintura"
+                photo={Fotos.pintura}
+                // p="Pintora."
               />
               <TeamItem
-                name="Isaque Costa"
-                photo="https://scontent.fipn6-1.fna.fbcdn.net/v/t1.0-1/p200x200/69461404_2596098667108981_2852688798075060224_n.jpg?_nc_cat=109&_nc_sid=7206a8&_nc_ohc=HB8ibFJF-W0AX8Rcmzo&_nc_ht=scontent.fipn6-1.fna&_nc_tp=6&oh=fa40b4c69eae0ab83f3511e26035e017&oe=5F343F13"
-                p="Fulll Stack Developer."
+                name="Encanamento"
+                photo={Fotos.encanamento}
+                // p="Engenheiro Civil."
               />
               <TeamItem
-                name="Isaque Costa"
-                photo="https://scontent.fipn6-1.fna.fbcdn.net/v/t1.0-9/83856551_103181677928350_4498881541371330560_o.jpg?_nc_cat=111&_nc_sid=09cbfe&_nc_ohc=AG1aA5AriYgAX-8kOph&_nc_ht=scontent.fipn6-1.fna&oh=9bcce4cc5fbb6a911f1132e8ad076991&oe=5F3441C0"
-                p="Fulll Stack Developer."
+                name="Alvenaria"
+                photo={Fotos.alvenaria}
+                // p="Engenheira Civil."
               />
               <TeamItem
-                name="Isaque Costa"
-                photo="https://scontent.fipn6-1.fna.fbcdn.net/v/t1.0-1/p200x200/69461404_2596098667108981_2852688798075060224_n.jpg?_nc_cat=109&_nc_sid=7206a8&_nc_ohc=HB8ibFJF-W0AX8Rcmzo&_nc_ht=scontent.fipn6-1.fna&_nc_tp=6&oh=fa40b4c69eae0ab83f3511e26035e017&oe=5F343F13"
-                p="Fulll Stack Developer."
+                name="Elétrica"
+                photo={Fotos.eletrica}
+                // p="Design de interiores."
               />
               <FaleConosco>
-                <img
-                  className="mr-3"
-                  src={GlobalVars.icon.whatsapp}
-                  alt="Fale Conosco!"
-                />
+                <i className="fa fa-whatsapp mr-3" />
                 Fale Conosco!
               </FaleConosco>
             </div>

@@ -3,17 +3,15 @@ import '~/styles/main.scss';
 
 import React from 'react';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
-import { GlobalStyles } from '~/styles/global';
 
-import Home from '~/pages/index';
-import Galeria from '~/pages/galeria';
-import FAQ from '~/pages/faq';
-import Contato from '~/pages/contato';
+import Home from '~/pages/index.jsx';
+import Galeria from '~/pages/galeria.jsx';
+import FAQ from '~/pages/faq.jsx';
+import Contato from '~/pages/contato.jsx';
 
 export default function App() {
   return (
     <Router>
-      <GlobalStyles />
       <Switch>
         <Route path="/" exact component={Home} />
         <Route path="/galeria" component={Galeria} />

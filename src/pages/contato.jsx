@@ -1,7 +1,7 @@
 import React from 'react';
 import { Button } from 'reactstrap';
 import { Form, Input, Textarea } from '@rocketseat/unform';
-import { Wrapper, Container, BulletItem } from '~/styles/global';
+import { Wrapper, Container, BulletItem, GlobalStyles } from '~/styles';
 
 import NavBar from '~/components/NavBar';
 import Footer from '~/components/Footer';
@@ -13,6 +13,7 @@ export default function Contato() {
 
   return (
     <Wrapper id="wrapper">
+      <GlobalStyles />
       <NavBar page="contato" />
       <Container id="container">
         <section className="contact">

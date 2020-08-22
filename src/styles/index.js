@@ -37,21 +37,15 @@ export const GlobalVars = {
   },
 
   img: {
-    ecoalpha: require('~/assets/img/logo.png'),
-
-    logo: require('~/assets/svg/logo_ideyou.svg'),
-    cube_bg: require('~/assets/svg/cube_bg.svg'),
-
-    instagram: require('~/assets/svg/instagram.svg'),
-    facebook: require('~/assets/svg/facebook.svg'),
-    whatsapp: require('~/assets/svg/whatsapp.svg'),
+    logo: require('~/assets/img/logo.png'),
+    avatar_1: require('~/assets/img/default-avatar-male.jpg'),
+    avatar_2: require('~/assets/img/default-avatar-female.jpg'),
   },
 
   icon: {
     rocket: require('~/assets/icon/rocket.svg'),
     eye: require('~/assets/icon/eye.svg'),
     checklist: require('~/assets/icon/checklist.svg'),
-    whatsapp: require('~/assets/icon/whatsapp.svg'),
   },
 
   banner: {
@@ -63,7 +57,6 @@ export const GlobalVars = {
 
 export const GlobalStyles = createGlobalStyle`
   @import url("https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700");
-  @import url("https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css");
 
   * {
     margin: 0;
@@ -157,6 +150,11 @@ export const GlobalStyles = createGlobalStyle`
   .navbar-toggler {
     color: ${GlobalVars.color.white}
   }
+  .social-links i {
+    font-size: 2rem;
+    margin-right: 1rem;
+    color: ${GlobalVars.color.e_green}
+  }
 
   section {
     padding: 100px 0;
@@ -220,8 +218,9 @@ export const GlobalStyles = createGlobalStyle`
     cursor: pointer;
     padding: 1rem 2rem;
     margin-top: 1rem;
-    color: ${GlobalVars.color.white};
-    background: ${GlobalVars.color.neutral};
+    font-weight: 600;
+    color: ${GlobalVars.color.e_green};
+    background: ${GlobalVars.color.white};
   }
   .faq .card {
     margin: 0;

@@ -2,6 +2,7 @@
   "name": "ecoalpha.com.br",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://ecoalpha.com.br/",
   "dependencies": {
     "@popperjs/core": "^2.4.0",
     "@rocketseat/unform": "^1.6.2",

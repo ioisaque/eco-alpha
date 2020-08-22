@@ -2,7 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import styled, { createGlobalStyle } from 'styled-components';
 
-import { GlobalVars } from '~/styles/global';
+import { GlobalVars } from '~/styles';
 
 export const Wrapper = styled.div`
   top: 0;

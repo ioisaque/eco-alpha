@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 
-import { GlobalVars } from '~/styles/global';
+import { GlobalVars } from '~/styles';
 
 export const Container = styled.div`
   width: 100%;
@@ -14,16 +14,10 @@ export const Container = styled.div`
   background: ${GlobalVars.color.white};
 `;
 
-const Icon = styled.img`
-  width: auto;
-  height: 60px;
-  padding: 15px 10px;
-`;
-
 export function Item({ icon, link }) {
   return (
     <a href={link} target="_blank" rel="noopener noreferrer">
-      <Icon src={icon} />
+      <i className={icon} />
     </a>
   );
 }

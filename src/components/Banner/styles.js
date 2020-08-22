@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 
-import { GlobalVars } from '~/styles/global';
+import { GlobalVars } from '~/styles';
 
 export const BackgroundImage = styled.div`
   width: 100%;
@@ -28,7 +28,7 @@ export const Container = styled.div`
 `;
 
 export const Logo = styled.img.attrs({
-  src: GlobalVars.img.ecoalpha,
+  src: GlobalVars.img.logo,
 })`
   max-width: 400px;
   display: block;
@@ -48,9 +48,9 @@ export const Button = styled.button`
   display: block;
   margin: 3rem auto;
 
-  font-size: 1rem;
+  font-size: 1.3rem;
   font-weight: 500;
-  padding: 15px 50px;
+  padding: 15px 40px;
   color: ${GlobalVars.color.white};
 
   background: none;

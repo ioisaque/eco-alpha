@@ -1,5 +1,4 @@
 import React from 'react';
-import { GlobalVars } from '~/styles/global';
 import { BackgroundImage, Container, Logo, SubTitle, Button } from './styles';
 
 export default function Banner() {
@@ -10,11 +9,7 @@ export default function Banner() {
           <Logo />
           <SubTitle>O melhor do mercado!</SubTitle>
           <Button>
-            <img
-              className="mr-3"
-              src={GlobalVars.icon.whatsapp}
-              alt="Vamos conversar?"
-            />
+            <i className="fa fa-whatsapp mr-3" />
             Vamos conversar?
           </Button>
         </div>
