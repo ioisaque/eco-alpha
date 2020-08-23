@@ -45,7 +45,7 @@ export default function Faq() {
                   Ecoalpha oferece garantia de todo serviço prestado, desde o
                   mais simples aos mais complexos.
                   <br />
-                  Tudo previamente acordado em acordado em contrato.
+                  Tudo previamente acordado em contrato.
                 </CardBody>
               </Card>
             </UncontrolledCollapse>
