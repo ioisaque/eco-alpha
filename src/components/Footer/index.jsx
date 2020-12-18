@@ -6,10 +6,11 @@ export default function Footer() {
   return (
     <footer className="row">
       <Container className="col-md-4 col-sm-12">
-        <a href="https://isaquecosta.com.br">
+        <a href="https://ideyou.com.br">
           <img
-            src="https://cdn.isaquecosta.com.br/marketing/copyright_dark.png"
-            alt="Desenvolvido por Isaque Costa"
+            style={{ width: 'auto', maxHeight: '50px' }}
+            src="https://cdn.ideyou.com.br/defaults/img/copyright_dark.png"
+            alt="Desenvolvido por IdeYou"
           />
         </a>
       </Container>
